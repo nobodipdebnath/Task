@@ -3,11 +3,11 @@ import { NavLink } from 'react-router';
 
 const Navbar = () => {
     const links = <>
-        <li className='text-base font-semibold'><NavLink>Home</NavLink></li>
-        <li className='text-base font-semibold'><NavLink>About</NavLink></li>
-        <li className='text-base font-semibold'><NavLink>Services</NavLink></li>
-        <li className='text-base font-semibold'><NavLink>Blog</NavLink></li>
-        <li className='text-base font-semibold'><NavLink>Contact</NavLink></li>
+        <li className='text-base font-semibold'><NavLink to='/'>Home</NavLink></li>
+        <li className='text-base font-semibold'><NavLink to='/about'>About</NavLink></li>
+        <li className='text-base font-semibold'><NavLink to='/services'>Services</NavLink></li>
+        <li className='text-base font-semibold'><NavLink to='/blogs'>Blog</NavLink></li>
+        <li className='text-base font-semibold'><NavLink to='/contact'>Contact</NavLink></li>
     </>
     return (
         <div className='flex justify-between items-center py-6 container mx-auto'>
