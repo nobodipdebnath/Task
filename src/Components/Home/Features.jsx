@@ -43,7 +43,7 @@ const Features = () => {
         <div className='feature pt-12.5'>
             <div className='flex items-center text-white flex-col justify-center '>
                 <button className='button-2 flex items-center gap-3'>
-                    <div className='h-3 w-3 rounded-full bg-primary1'></div>
+                    <div className='h-3 w-3 rounded-full bg-primary1 hover:bg-black'></div>
                     <span>Features</span>
                 </button>
                 <p className="text-center text-xl montserrat mt-12.5">Explore the capabilities of our AI coach chatbot, designed to enhance your personal and professional growth.</p>
