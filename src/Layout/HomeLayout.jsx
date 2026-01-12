@@ -5,8 +5,10 @@ import Footer from '../Components/Shared/Footer';
 
 const HomeLayout = () => {
     return (
-        <div>
-            <Navbar></Navbar>
+        <div className='relative max-w-[1440px] mx-auto'>
+            <div className='fixed z-50 top-0 left-0 right-0'>
+                <Navbar></Navbar>
+            </div>
             <Outlet></Outlet>
             <Footer></Footer>
         </div>
