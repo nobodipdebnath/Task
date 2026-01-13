@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink, Outlet } from "react-router";
+import { Link, NavLink, Outlet } from "react-router";
 import { FiPlusCircle } from "react-icons/fi";
 import { BiMessageDetail } from "react-icons/bi";
 import user from "../assets/images/user.png";
@@ -12,9 +12,9 @@ const ChatLayout = () => {
     <div className="bg-black py-10 grid grid-cols-5  feature">
       <div className="col-span-1">
         <div className="px-7 h-full border-r-1  border-primary1 w-[250px]">
-          <h1 className="text-[50px] text-center font-bold text-white pb-2 border-b border-primary1">
+          <Link to='/' className="text-[50px] text-center font-bold text-white pb-2 border-b border-primary1">
             OP Ai
-          </h1>
+          </Link>
           <div className="flex flex-col gap-1 mt-4">
             <NavLink to='/chat'>
               <li className="flex items-center gap-2 text-white  p-2.5 w-full hover:bg-[#2D2A2B] rounded-sm">
@@ -99,7 +99,9 @@ const ChatLayout = () => {
       </div>
       <div className="col-span-4 pr-10">
         <div className="flex justify-end w-full text-[#FAFAFD]">
-            <h2><IoSettingsOutline className="text-3xl cursor-pointer"></IoSettingsOutline></h2>
+            <NavLink to='/chat/setting'>
+              <h2><IoSettingsOutline className="text-3xl cursor-pointer"></IoSettingsOutline></h2>
+            </NavLink>
         </div>
         <div className="">
             <Outlet></Outlet>

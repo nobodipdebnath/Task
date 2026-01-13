@@ -8,6 +8,9 @@ import ContactPage from "../Pages/ContactPage";
 import ChatLayout from "../Layout/ChatLayout";
 import StartChat from "../Components/Chat/StartChat";
 import AiChat from "../Components/Chat/AiChat";
+import Setting from "../Components/Chat/Setting";
+import AuthLayout from "../Layout/AuthLayout";
+import Login from "../Components/Auth/Login";
 
 const router = createBrowserRouter([
   {
@@ -39,9 +42,23 @@ const router = createBrowserRouter([
       {
         path: "ai-chat",
         Component: AiChat
+      },
+      {
+        path: "setting",
+        Component: Setting
       }
     ],
   },
+  {
+    path: 'login',
+    Component: AuthLayout,
+    children: [
+        {
+            index: true,
+            Component: Login
+        }
+    ]
+  }
 ]);
 
 export default router;

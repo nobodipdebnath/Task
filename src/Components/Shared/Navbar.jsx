@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import logo from '../../assets/images/logo.png'
 
 const Navbar = () => {
@@ -17,7 +17,7 @@ const Navbar = () => {
                     {links}
                 </ul>
                 <div>
-                    <button className='button'>Start Subscription</button>
+                    <Link to='/login' className='button'>Start Subscription</Link>
                 </div>
             </div>
         </div>
