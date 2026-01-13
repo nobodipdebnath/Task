@@ -47,6 +47,9 @@
 .button-2{
   @apply border-2 border-primary1 hover:bg-primary1 duration-500 hover:text-black cursor-pointer px-3.5 text-base font-bold   py-2 rounded-lg
 }
+.pricing-button{
+  @apply py-3 text-sm font-bold w-full mt-10 rounded-xl text-black border border-white/10 cursor-pointer
+}
 .hero-bg{
   background-image: url('../src/assets/images/hero.png');
   background-position: center;
