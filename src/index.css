@@ -45,7 +45,7 @@
   @apply py-4 px-5 bg-primary1 text-base font-bold text-black cursor-pointer rounded-lg
 }
 .button-2{
-  @apply border-2 border-primary1 hover:bg-primary1 duration-500 hover:text-black cursor-pointer px-3.5 text-base font-bold   py-2 rounded-lg
+  @apply border-2 border-primary1 hover:bg-primary1 duration-500 hover:text-black cursor-pointer px-3.5 text-base font-bold   py-4 rounded-lg
 }
 .pricing-button{
   @apply py-3 text-sm font-bold w-full mt-10 rounded-xl text-black border border-white/10 cursor-pointer
@@ -59,4 +59,10 @@
   background-image: url('../src/assets/images/feturebg.png');
   background-size: cover;
   background-position: center;
+}
+.chat{
+  background-image: url('./assets/images/chat.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }

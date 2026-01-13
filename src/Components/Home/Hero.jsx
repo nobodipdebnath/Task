@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 const Hero = () => {
   return (
@@ -13,9 +14,9 @@ const Hero = () => {
 
         <div className="flex gap-4">
           <button className="button manrope ">Start Subscription</button>
-          <button className="button-2 manrope">
+          <Link to='/chat' className="button-2 manrope">
             Chat with OP Coach Now
-          </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -4,6 +4,7 @@ import Features from '../Components/Home/Features';
 import Pricing from '../Components/Home/Pricing';
 import Cat from '../Components/Home/Cat';
 import FAQSection from '../Components/Home/FAQSection';
+import Testimonials from '../Components/Home/Testimonials';
 
 const HomePage = () => {
     return (
@@ -11,6 +12,7 @@ const HomePage = () => {
             <Hero></Hero>
             <Features></Features>
             <Pricing></Pricing>
+            <Testimonials></Testimonials>
             <FAQSection></FAQSection>
             <Cat></Cat>
         </div>
