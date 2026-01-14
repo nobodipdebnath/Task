@@ -13,7 +13,9 @@ const Hero = () => {
         </p>
 
         <div className="flex flex-col md:flex-row gap-4">
-          <button className="button manrope ">Start Subscription</button>
+          <a href="#pricing">
+            <button className="button manrope ">Start Subscription</button>
+          </a>
           <Link to='/chat' className="button-2 manrope">
             Chat with OP Coach Now
           </Link>

@@ -3,7 +3,11 @@
 @plugin "daisyui";
  body{
   background-color: black;
- }
+}
+
+html{
+  scroll-behavior: smooth;
+}
 
 .manrope {
   font-family: "Manrope", sans-serif;

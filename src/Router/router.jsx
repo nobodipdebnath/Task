@@ -18,6 +18,7 @@ import MindsetChat from "../Components/Chat/MindsetChat";
 import InternalChallenge from "../Components/Chat/InternalChallenge";
 import InternalChat from "../Components/Chat/InternalChat";
 import JournalHistory from "../Components/Chat/JournalHistory";
+import Coach from "../Pages/Coach";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
         index: true,
         Component: HomePage,
       },
+      {
+        path:'coach',
+        Component: Coach
+      }
     ],
   },
   {

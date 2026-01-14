@@ -4,7 +4,7 @@ import pricing2 from '../../assets/images/pricing2.png'
 import { MdOutlineCheckCircle } from "react-icons/md";
 const Pricing = () => {
     return (
-        <div className='feature md:pt-[160px] montserrat pb-[140px]'>
+        <div id='pricing' className='feature md:pt-[160px] montserrat pb-[140px]'>
             <div className='flex mx-4 *: flex-col max-w-2xl lg:mx-auto  justify-center items-center '>
                 <p className='text-white/65 px-3 py-1.5 border rounded-full text-sm md:text-base border-white/40 backdrop-blur-[25px] bg-white/10'> Bring your business to the best scale</p>
                 <h1 className="lg:text-[86px] text-5xl text-center leading-[95%] text-white/80 league-gothic font-bold mt-6">Discover Products With the Best Pricing</h1>

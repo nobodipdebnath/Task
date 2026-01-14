@@ -5,14 +5,14 @@ import { FaBars } from "react-icons/fa";
 
 const Navbar = () => {
     const links = <>
-        <li className='text-white font-medium text-sm hover:underline '><NavLink>Home</NavLink></li>
-        <li className='text-white font-medium text-sm hover:underline '><NavLink>Coach</NavLink></li>
+        <li className='text-white font-medium text-sm hover:underline '><NavLink to='/'>Home</NavLink></li>
+        <li className='text-white font-medium text-sm hover:underline '><NavLink to='/coach'>Coach</NavLink></li>
     </>
     return (
         <div className='flex items-center justify-between manrope md:px-15 md:py-6 py-4 px-4 lg:backdrop-blur-[2px] backdrop-blur-2xl'>
-            <div>
+            <Link to='/'>
                 <img src={logo} alt="logo" />
-            </div>
+            </Link>
             <div className='hidden md:block'>
                 <div className='flex items-center gap-8'>
                     <ul className='flex items-center gap-8'>
