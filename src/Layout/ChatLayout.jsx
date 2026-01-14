@@ -7,11 +7,12 @@ import { FaBrain, FaChevronDown, FaChevronUp } from "react-icons/fa6";
 import { IoSettingsOutline } from "react-icons/io5";
 import { FaBookJournalWhills } from "react-icons/fa6";
 import { FaGraduationCap } from "react-icons/fa6";
+import { LuLayers3 } from "react-icons/lu";
 
 const ChatLayout = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className="bg-black py-10  grid grid-cols-5  feature">
+    <div className="bg-black py-10 max-w-[1440px] mx-auto grid grid-cols-5  feature">
       <div className="col-span-1">
         <div className="px-7 h-full border-r-1  border-primary1 w-[250px]">
           <Link to='/' className="text-[50px] text-center font-bold text-white pb-2 border-b border-primary1">
@@ -28,6 +29,12 @@ const ChatLayout = () => {
               <li className="flex items-center gap-2 text-white p-2.5 w-full hover:bg-[#2D2A2B] rounded-sm">
                 <BiMessageDetail></BiMessageDetail>
                 <span>AI Chat</span>
+              </li>
+            </NavLink>
+            <NavLink to='/chat/journalHistory'>
+              <li className="flex items-center gap-2 text-white p-2.5 w-full hover:bg-[#2D2A2B] rounded-sm">
+                <LuLayers3></LuLayers3>
+                <span>Journal History</span>
               </li>
             </NavLink>
           </div>

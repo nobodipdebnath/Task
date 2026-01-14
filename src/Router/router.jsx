@@ -17,6 +17,7 @@ import MindsetMantra from "../Components/Chat/MindsetMantra";
 import MindsetChat from "../Components/Chat/MindsetChat";
 import InternalChallenge from "../Components/Chat/InternalChallenge";
 import InternalChat from "../Components/Chat/InternalChat";
+import JournalHistory from "../Components/Chat/JournalHistory";
 
 const router = createBrowserRouter([
   {
@@ -80,6 +81,10 @@ const router = createBrowserRouter([
       {
         path: 'internalChat',
         Component: InternalChat
+      },
+      {
+        path: 'journalHistory',
+        Component: JournalHistory
       }
     ],
   },
