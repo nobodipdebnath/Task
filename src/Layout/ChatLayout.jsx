@@ -15,7 +15,7 @@ const ChatLayout = () => {
   console.log("Location", location.pathname);
 
   return (
-    <div className="min-h-screen max-w-[1440px] mx-auto feature">
+    <div className="min-h-screen  feature">
       <div className="">
         <div className="fixed flex items-center left-10 top-0  h-screen w-[250px] z-50">
           <div className="px-7 h-full flex flex-col">
