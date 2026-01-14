@@ -14,6 +14,9 @@ import Win from "../Components/Chat/Win";
 import ProfessionalChallenge from "../Components/Chat/ProfessionalChallenge";
 import ProfessionalWin from "../Components/Chat/ProfessionalWin";
 import MindsetMantra from "../Components/Chat/MindsetMantra";
+import MindsetChat from "../Components/Chat/MindsetChat";
+import InternalChallenge from "../Components/Chat/InternalChallenge";
+import InternalChat from "../Components/Chat/InternalChat";
 
 const router = createBrowserRouter([
   {
@@ -65,6 +68,18 @@ const router = createBrowserRouter([
       {
         path: 'mindsetMantra',
         Component: MindsetMantra
+      },
+      {
+        path: 'mindsetChat',
+        Component: MindsetChat
+      },
+      {
+        path: 'internalChallenge',
+        Component: InternalChallenge
+      },
+      {
+        path: 'internalChat',
+        Component: InternalChat
       }
     ],
   },

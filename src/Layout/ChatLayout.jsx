@@ -11,7 +11,7 @@ import { FaGraduationCap } from "react-icons/fa6";
 const ChatLayout = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className="bg-black py-10 h-screen grid grid-cols-5  feature">
+    <div className="bg-black py-10  grid grid-cols-5  feature">
       <div className="col-span-1">
         <div className="px-7 h-full border-r-1  border-primary1 w-[250px]">
           <Link to='/' className="text-[50px] text-center font-bold text-white pb-2 border-b border-primary1">
@@ -44,7 +44,7 @@ const ChatLayout = () => {
                 <span>Journal</span>
               </li>
             </NavLink>
-            <NavLink>
+            <NavLink to='/chat/internalChallenge'>
               <li className="text-white flex items-center gap-2 list-none pl-0  p-2.5 w-full">
                 <FaGraduationCap></FaGraduationCap>
                 <span> Internal Challenge</span>
@@ -108,7 +108,7 @@ const ChatLayout = () => {
               <h2><IoSettingsOutline className="text-3xl cursor-pointer"></IoSettingsOutline></h2>
             </NavLink>
         </div>
-        <div className="">
+        <div className="overflow-y-auto">
             <Outlet></Outlet>
         </div>
       </div>
