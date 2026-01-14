@@ -8,7 +8,7 @@ const Register = () => {
     return (
         <div className='h-screen inter relative'>
                     <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 px-10 py-14 border border-primary1 rounded-[10px] flex flex-col items-center justify-center'>
-                        <h1 className='inter text-4xl font-semibold text-[#FAFAFD]'>Login</h1>
+                        <h1 className='inter text-4xl font-semibold text-[#FAFAFD]'>Sign Up</h1>
                         <p className='text-base text-[#FAFAFD] mt-3'>You have an already  account? <Link to='/login' className='text-sm text-[#999999] underline cursor-pointer'>Sign up</Link></p>
                         <button class="px-[160px] py-3 rounded-[10px] font-semibold cursor-pointer mt-10 bg-[#C5BB95] text-[#2D2D2D] flex items-center gap-2 w-full border-[#e5e5e5]">
                             <FcGoogle></FcGoogle>
