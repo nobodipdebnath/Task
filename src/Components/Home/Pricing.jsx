@@ -4,18 +4,18 @@ import pricing2 from '../../assets/images/pricing2.png'
 import { MdOutlineCheckCircle } from "react-icons/md";
 const Pricing = () => {
     return (
-        <div className='feature pt-[160px] montserrat pb-[140px]'>
-            <div className='flex flex-col max-w-2xl mx-auto  justify-center items-center '>
-                <p className='text-white/65 px-3 py-1.5 border rounded-full border-white/40 backdrop-blur-[25px] bg-white/10'> Bring your business to the best scale</p>
-                <h1 className="text-[86px] text-center leading-[95%] text-white/80 league-gothic font-bold mt-6">Discover Products With the Best Pricing</h1>
+        <div className='feature md:pt-[160px] montserrat pb-[140px]'>
+            <div className='flex mx-4 *: flex-col max-w-2xl lg:mx-auto  justify-center items-center '>
+                <p className='text-white/65 px-3 py-1.5 border rounded-full text-sm md:text-base border-white/40 backdrop-blur-[25px] bg-white/10'> Bring your business to the best scale</p>
+                <h1 className="lg:text-[86px] text-5xl text-center leading-[95%] text-white/80 league-gothic font-bold mt-6">Discover Products With the Best Pricing</h1>
                 <p className="text-center text-xl montserrat mt-3 text-white/88">Select from best plan, ensuring a perfect match. Need more or less? Customize your subscription for a seamless fit!</p>
             </div>
-            <div className='my-12 p-1 flex w-[12%] mx-auto items-center border border-white/12 rounded-xl backdrop-blur-md justify-center'>
+            <div className='my-12 p-1 flex w-[55%] lg:w-[12%] mx-auto items-center border border-white/12 rounded-xl backdrop-blur-md justify-center'>
                 <button className='py-2 px-3 cursor-pointer text-black text-sm font-semibold rounded-[10px] bg-gradient-to-b from-[#DBD0A6] to-[#8E7D3F]'>Monthly</button>
                 <button className='py-2 cursor-pointer px-3 text-white/80 text-sm font-semibold rounded-[10px] bg-transparent'>Anually</button>
             </div>
-            <div className='flex justify-center gap-6 items-center'>
-                <div className='p-10 border border-white/20 rounded-[32px] w-[360px] bg-gradient-to-b from-white/12 via-white/4 to-white/7 backdrop-blur-xl'>
+            <div className='flex flex-col md:flex-row justify-center gap-6 items-center'>
+                <div className='p-10 border border-white/20 rounded-[32px] mx-4 md:mx-0 lg:w-[360px] bg-gradient-to-b from-white/12 via-white/4 to-white/7 backdrop-blur-xl'>
                     <img src={pricing1} alt="" />
                     <p className='text-white text-2xl font-medium mt-6'>Corporate</p>
                     <p className='text-sm text-white/80'>For large teams & corporations.</p>
@@ -32,7 +32,7 @@ const Pricing = () => {
                         <li className='flex items-center gap-2 text-sm'><MdOutlineCheckCircle></MdOutlineCheckCircle><span>Advanced analytics</span></li>
                     </ul>
                 </div>
-                <div className='p-10 border border-white/20 rounded-[32px] w-[360px] bg-gradient-to-b from-white/10 via-white/2 to-white/6 backdrop-blur-xl'>
+                <div className='p-10 border border-white/20 rounded-[32px] mx-4 md:mx-0 lg:w-[360px] bg-gradient-to-b from-white/10 via-white/2 to-white/6 backdrop-blur-xl'>
                     <img src={pricing2} alt="" />
                     <p className='text-white text-2xl font-medium mt-6'>Optimal Performer</p>
                     <p className='text-sm text-white/80'>Best for business owners.</p>

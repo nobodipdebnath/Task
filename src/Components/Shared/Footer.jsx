@@ -8,7 +8,7 @@ import twitter from "../../assets/images/twitter.png";
 const Footer = () => {
   return (
     <div className="bg-[#2D2A2B] inter ">
-      <div className="flex gap-[100px] px-[150px] pt-15">
+      <div className="flex gap-10 lg:gap-[100px] flex-col md:flex-row mx-6 md:mx-0 md:px-[150px] pt-15">
         <div className="max-w-md">
           <h2 className="text-2xl font-semibold text-white">
             Optimal Performance
@@ -81,7 +81,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-full h-[1px] bg-white my-4"></div>
-      <div className="flex items-center justify-between mx-[200px] text-[#FAFAFD] text-base pb-4.5">
+      <div className="flex items-center justify-between lg:mx-[200px] mx-4 md:mx-0 text-[#FAFAFD] text-base pb-4.5">
         <p>Copyright 2025 FENYX FEMME</p>
         <p>Inc Terms of Service</p>
         <p>Privacy</p>

@@ -27,7 +27,7 @@ const FAQSection = () => {
     <div className="feature pb-25 ">
         <h1 className="text-center text-[50px] nunito font-semibold pt-25 text-white">Frequently asked <span className="text-[#FEE801]">questions</span></h1>
       <div className="max-w-5xl mx-auto lg:px-4 py-10 ">
-        <div className="flex flex-col mt-10 gap-4">
+        <div className="flex flex-col mx-4 md:mx-0 mt-10 gap-4">
           {faqData.map((faq, index) => (
             <FAQItem key={index} faq={faq} />
           ))}

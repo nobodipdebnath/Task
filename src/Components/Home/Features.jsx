@@ -50,8 +50,8 @@ const Features = () => {
                 <h2 className="text-[64px] league-gothic font-bold mt-6">Core Features</h2>
                 <p className="text-center text-xl montserrat mt-6">Our AI coach chatbot offers a range of features to support your growth journey.</p>
             </div>
-            <div className='py-25 mx-[250px]'>
-                <div className='grid grid-cols-3 justify-center gap-6'>
+            <div className='py-25 mx-4 md:mx-[250px]'>
+                <div className='grid lg:grid-cols-3 justify-center gap-10 lg:gap-6'>
                     {
                         cards?.slice(0, 3).map(card => {
                             return(
@@ -66,7 +66,7 @@ const Features = () => {
                         })
                     }
                 </div>
-                <div className='flex mt-15 justify-center gap-6'>
+                <div className='flex mt-15 flex-col md:flex-row justify-center gap-10 lg:gap-6'>
                     {
                         cards?.slice(3, 5).map(card => {
                             return(
