@@ -15,7 +15,7 @@ const Setting = () => {
 
   return (
     <div className="p-6">
-      <h1 className="text-[#FAFAFD] mt-3 inter text-[32px] font-bold">
+      <h1 className="text-[#FAFAFD] mt-3 ml-[12%] inter text-[32px] font-bold">
         General Settings
       </h1>
       <div className="flex items-center justify-center mt-10">
