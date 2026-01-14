@@ -20,7 +20,7 @@ const Login = () => {
   };
   return (
     <div className="h-screen inter relative">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 px-3 lg:px-10 py-8 lg:py-14 md:w-auto w-[90%] border border-primary1 rounded-[10px] flex flex-col items-center justify-center">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 px-3 lg:px-8 py-8 lg:py-10 md:w-auto w-[90%] border border-primary1 rounded-[10px] flex flex-col items-center justify-center">
         <h1 className="inter text-4xl font-semibold text-[#FAFAFD]">Login</h1>
         <p className="text-base text-[#FAFAFD] mt-3">
           Don’t have an account?{" "}

@@ -78,7 +78,7 @@ const Testimonials = () => {
       </div>
 
       <div className=" px-4">
-        <div className="grid mx-[8%] grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        <div className="grid mx-0 md:mx-[8%] grid-cols-1 md:grid-cols-3 gap-6 mb-8">
           {visibleTestimonials.map((testimonial) => (
             <div
               key={testimonial.id}

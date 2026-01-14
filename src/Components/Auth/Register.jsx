@@ -20,7 +20,7 @@ const Register = () => {
   };
   return (
     <div className="h-screen inter relative">
-      <div className="absolute top-1/2 w-[90%] md:w-auto left-1/2 -translate-x-1/2 -translate-y-1/2  px-2 md:px-10 py-8 md:py-14 border border-primary1 rounded-[10px] flex flex-col items-center justify-center">
+      <div className="absolute top-1/2 w-[90%] md:w-auto left-1/2 -translate-x-1/2 -translate-y-1/2  px-2 md:px-8 py-8 md:py-10 border border-primary1 rounded-[10px] flex flex-col items-center justify-center">
         <h1 className="inter text-4xl font-semibold text-[#FAFAFD]">Sign Up</h1>
         <p className="text-base text-[#FAFAFD] mt-3">
           You have an already account?{" "}

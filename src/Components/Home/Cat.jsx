@@ -2,7 +2,7 @@ import React from "react";
 
 const Cat = () => {
   return (
-    <div className="hero-bg relative h-[50vh] flex justify-center items-center">
+    <div className="hero-bg relative h-[80vh] md:h-[50vh] flex justify-center items-center">
       <div className="absolute inset-0 bg-black/70"></div>
       <div className="relative z-10 flex flex-col justify-center items-center text-center text-white">
         <button className="button-2 flex items-center gap-3">
