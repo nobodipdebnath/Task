@@ -10,6 +10,9 @@ import Login from "../Components/Auth/Login";
 import Register from "../Components/Auth/Register";
 import Journal from "../Components/Chat/Journal";
 import Challenge from "../Components/Chat/Challenge";
+import Win from "../Components/Chat/Win";
+import ProfessionalChallenge from "../Components/Chat/ProfessionalChallenge";
+import ProfessionalWin from "../Components/Chat/ProfessionalWin";
 
 const router = createBrowserRouter([
   {
@@ -45,6 +48,18 @@ const router = createBrowserRouter([
       {
         path: 'challenge',
         Component: Challenge
+      },
+      {
+        path: 'win',
+        Component: Win
+      },
+      {
+        path: 'professionalChallenge',
+        Component: ProfessionalChallenge
+      },
+      {
+        path: 'professionalWin',
+        Component: ProfessionalWin
       }
     ],
   },
