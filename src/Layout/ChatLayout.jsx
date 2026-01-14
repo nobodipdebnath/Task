@@ -3,8 +3,10 @@ import { Link, NavLink, Outlet } from "react-router";
 import { FiPlusCircle } from "react-icons/fi";
 import { BiMessageDetail } from "react-icons/bi";
 import user from "../assets/images/user.png";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa6";
+import { FaBrain, FaChevronDown, FaChevronUp } from "react-icons/fa6";
 import { IoSettingsOutline } from "react-icons/io5";
+import { FaBookJournalWhills } from "react-icons/fa6";
+import { FaGraduationCap } from "react-icons/fa6";
 
 const ChatLayout = () => {
   const [open, setOpen] = useState(false);
@@ -31,17 +33,20 @@ const ChatLayout = () => {
           </div>
           <div className="mt-[360px]">
             <NavLink>
-              <li className="text-white list-none pl-0  p-2.5 w-full border-b border-primary1">
+              <li className="text-white flex items-center gap-2 list-none pl-0  p-2.5 w-full border-b border-primary1">
+                <FaBrain></FaBrain>
                 <span>Mindset Mantra</span>
               </li>
             </NavLink>
-            <NavLink>
-              <li className="text-white list-none pl-0  p-2.5 w-full border-b border-primary1">
+            <NavLink to='/chat/journal'>
+              <li className="text-white list-none pl-0 flex items-center gap-2  p-2.5 w-full border-b border-primary1">
+                <FaBookJournalWhills></FaBookJournalWhills>
                 <span>Journal</span>
               </li>
             </NavLink>
             <NavLink>
-              <li className="text-white list-none pl-0  p-2.5 w-full">
+              <li className="text-white flex items-center gap-2 list-none pl-0  p-2.5 w-full">
+                <FaGraduationCap></FaGraduationCap>
                 <span> Internal Challenge</span>
               </li>
             </NavLink>

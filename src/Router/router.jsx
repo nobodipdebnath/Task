@@ -8,6 +8,8 @@ import Setting from "../Components/Chat/Setting";
 import AuthLayout from "../Layout/AuthLayout";
 import Login from "../Components/Auth/Login";
 import Register from "../Components/Auth/Register";
+import Journal from "../Components/Chat/Journal";
+import Challenge from "../Components/Chat/Challenge";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +38,14 @@ const router = createBrowserRouter([
         path: "setting",
         Component: Setting,
       },
+      {
+        path: 'journal',
+        Component: Journal
+      },
+      {
+        path: 'challenge',
+        Component: Challenge
+      }
     ],
   },
   {
