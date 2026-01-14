@@ -373,14 +373,14 @@ const ChatLayout = () => {
                 </Link>
 
                 <div className="flex flex-col gap-1 mt-4">
-                  <NavLink to="/chat">
-                    <li className="flex items-center gap-2 text-white p-2.5 w-full bg-[#2D2A2B] rounded-sm">
+                  <NavLink to="/chat" className={({ isActive }) => `rounded-sm ${isActive ? "bg-[#2D2A2B] text-white" : "text-white"}`}>
+                    <li className="flex items-center rounded-sm gap-2 text-white p-2.5 w-full hover:bg-[#2D2A2B] ">
                       <FiPlusCircle />
                       <span>Start new chat</span>
                     </li>
                   </NavLink>
-                  <NavLink to="/chat/ai-chat">
-                    <li className="flex items-center gap-2 text-white p-2.5 w-full bg-[#2D2A2B] rounded-sm">
+                  <NavLink to="/chat/ai-chat" className={({ isActive }) => `rounded-sm ${isActive ? "bg-[#2D2A2B] text-white" : "text-white"}`}>
+                    <li className="flex items-center gap-2 text-white p-2.5 w-full hover:bg-[#2D2A2B] rounded-sm">
                       <BiMessageDetail />
                       <span>AI Chat</span>
                     </li>

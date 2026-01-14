@@ -33,14 +33,14 @@ const Setting = () => {
         onSubmit={handleSubmit(onSubmit)}
         className="w-[800px] mt-25 mx-auto"
       >
-        <div className="flex items-center gap-15">
+        <div className="grid grid-cols-2 w-full items-center gap-15">
           <div>
             <h1 className="text-[#FAFAFD] text-sm font-semibold mb-3">Name</h1>
             <input
               type="text"
               placeholder="Full Name"
               {...register("name", { required: "Name is required" })}
-              className="w-[360px] px-4 text-[#FAFAFD] outline-none py-4.5 border-primary1 border placeholder:text-[#FAFAFD] rounded-lg "
+              className="w-full px-4 text-[#FAFAFD] outline-none py-4.5 border-primary1 border placeholder:text-[#FAFAFD] rounded-lg "
             />
             {errors.name && (
               <p className="text-red-500 text-sm">{errors.name.message}</p>
@@ -60,7 +60,7 @@ const Setting = () => {
                   message: "Phone number must be 11 digits",
                 },
               })}
-              className="w-[360px] px-4 text-[#FAFAFD] outline-none py-4.5 border-primary1 border placeholder:text-[#FAFAFD] rounded-lg "
+              className="w-full px-4 text-[#FAFAFD] outline-none py-4.5 border-primary1 border placeholder:text-[#FAFAFD] rounded-lg "
             />
             {errors.phone && (
               <p className="text-red-500 text-sm">{errors.phone.message}</p>
@@ -68,14 +68,14 @@ const Setting = () => {
           </div>
         </div>
         <div className="grid grid-cols-2 gap-15 mt-15">
-          <div className="flex flex-col gap-15">
+          <div className="grid grid-cols-1 gap-15">
             <div>
             <h1 className="text-[#FAFAFD] text-sm font-semibold mb-3">User Name</h1>
               <input
                 type="text"
                 placeholder="Username"
                 {...register("username", { required: "Username is required" })}
-                className="w-[360px] px-4 text-[#FAFAFD] outline-none py-4.5 border-primary1 border placeholder:text-[#FAFAFD] rounded-lg "
+                className="w-full px-4 text-[#FAFAFD] outline-none py-4.5 border-primary1 border placeholder:text-[#FAFAFD] rounded-lg "
               />
               {errors.username && (
                 <p className="text-red-500 text-sm">
@@ -87,7 +87,7 @@ const Setting = () => {
                 <h1 className="text-[#FAFAFD] text-sm font-semibold mb-3">Gender</h1>
               <select
                 {...register("gender", { required: "Gender is required" })}
-                className="w-[360px] px-4 text-[#FAFAFD] outline-none py-4.5 border-primary1 border placeholder:text-[#FAFAFD] rounded-lg "
+                className="w-full px-4 text-[#FAFAFD] outline-none py-4.5 border-primary1 border placeholder:text-[#FAFAFD] rounded-lg bg-transparent "
               >
                 <option value="">Select Gender</option>
                 <option value="male">Male</option>
@@ -99,15 +99,17 @@ const Setting = () => {
               )}
             </div>
           </div>
-          <div>
+          <div className="h-full w-full">
             <div>
                 <h1 className="text-[#FAFAFD] text-sm font-semibold mb-3">Description</h1>
               <textarea
                 placeholder="Description"
+                cols={8}
+                rows={8}
                 {...register("description", {
                   required: "Description is required",
                 })}
-                className="w-[360px] px-4 text-[#FAFAFD] outline-none py-4.5 border-primary1 border placeholder:text-[#FAFAFD] rounded-lg h-[210px]"
+                className="w-full px-4 text-[#FAFAFD] outline-none py-4.5 border-primary1 border placeholder:text-[#FAFAFD] rounded-lg h-full"
               />
               {errors.description && (
                 <p className="text-red-500 text-sm">
