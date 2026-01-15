@@ -5,7 +5,7 @@ import { FaArrowUp } from 'react-icons/fa6';
 
 const ProfessionalChallenge = () => {
     return (
-    <div className="chat px-[100px] pb-[120px]">
+    <div className="chat md:px-[100px] pb-[120px]">
       <h1 className="text-white text-center text-[96px] league-gothic">
         Journal
       </h1>

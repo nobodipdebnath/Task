@@ -4,9 +4,15 @@ import { IoAttach } from "react-icons/io5";
 import logo from '../../assets/images/logo.png'
 
 const InternalChat = () => {
+  const handelSubmit = (e) => {
+    e.preventDefault();
+    const message = e.target.value;
+    console.log('message', message)
+
+  }
     return (
-    <div className="chat px-[100px] pb-[120px]">
-      <div className='w-[630px] flex items-center mx-auto justify-center'>
+    <div className="chat md:px-[100px] pb-[120px]">
+      <div className='md:w-[630px] w-full flex items-center mx-auto justify-center'>
         <span className='py-6 w-full border border-primary1 rounded-xl bg-[#2D2D2D] text-primary1 text-center'>1. Identification</span>
       </div>
 
@@ -43,7 +49,7 @@ const InternalChat = () => {
         <h1 className="text-start py-4.5 px-8 text-lg text-[#2D2D2D] bg-primary1 rounded-xl mt-3.5">Internal blocks include self-doubt, overthinking, and fear of failure. External blocks include workload pressure, lack of clear structure, and expectations from others that add to the overall weight.</h1>
       </div>
 
-      <div className='w-[630px] mt-24 flex items-center mx-auto justify-center'>
+      <div className='md:w-[630px] w-full mt-24 flex items-center mx-auto justify-center'>
         <span className='py-6 w-full border border-primary1 rounded-xl bg-[#2D2D2D] text-primary1 text-center'>2. Exploration</span>
       </div>
       <div>
@@ -54,7 +60,7 @@ const InternalChat = () => {
 
         <h1 className="text-start py-4.5 px-8 text-lg text-[#2D2D2D] bg-primary1 rounded-xl mt-3.5">Accepting that career, relationships, or health may not unfold as planned teaches resilience. Life’s uncertainties remind us to focus on what we can control—our mindset and actions—rather than outcomes. Embracing unpredictability helps reduce stress, foster growth, and find strength in adapting to challenges with patience and hope.</h1>
       </div>
-      <div className='w-[630px] mt-24 flex items-center mx-auto justify-center'>
+      <div className='md:w-[630px] w-full mt-24 flex items-center mx-auto justify-center'>
         <span className='py-6 w-full border border-primary1 rounded-xl bg-[#2D2D2D] text-primary1 text-center'>3. Reframing</span>
       </div>
       <div>
@@ -65,7 +71,7 @@ const InternalChat = () => {
 
         <h1 className="text-start py-4.5 px-8 text-lg text-[#2D2D2D] bg-primary1 rounded-xl mt-3.5">Accepting that career, relationships, or health may not unfold as planned teaches resilience. Life’s uncertainties remind us to focus on what we can control—our mindset and actions—rather than outcomes. Embracing unpredictability helps reduce stress, foster growth, and find strength in adapting to challenges with patience and hope.</h1>
       </div>
-      <div className='w-[630px] mt-24 flex items-center mx-auto justify-center'>
+      <div className='md:w-[630px] w-full mt-24 flex items-center mx-auto justify-center'>
         <span className='py-6 w-full border border-primary1 rounded-xl bg-[#2D2D2D] text-primary1 text-center'>4. Action Planning</span>
       </div>
       <div>
@@ -76,7 +82,7 @@ const InternalChat = () => {
 
         <h1 className="text-start py-4.5 px-8 text-lg text-[#2D2D2D] bg-primary1 rounded-xl mt-3.5">Accepting that career, relationships, or health may not unfold as planned teaches resilience. Life’s uncertainties remind us to focus on what we can control—our mindset and actions—rather than outcomes. Embracing unpredictability helps reduce stress, foster growth, and find strength in adapting to challenges with patience and hope.</h1>
       </div>
-      <div className='w-[630px] mt-24 flex items-center mx-auto justify-center'>
+      <div className='md:w-[630px] w-full mt-24 flex items-center mx-auto justify-center'>
         <span className='py-6 w-full border border-primary1 rounded-xl bg-[#2D2D2D] text-primary1 text-center'>5. Reflection & Adaptation</span>
       </div>
       <div>
@@ -89,14 +95,14 @@ const InternalChat = () => {
       </div>
       
 
-      <div className="mt-12.5 fixed right-30 left-95 bottom-15">
+      <div onSubmit={handelSubmit} className="mt-12.5 fixed md:right-[11%] right-4 w-[92%] md:w-auto md:left-[28%] bottom-15">
         <input
           className="w-full py-6 px-7 bg-[#2D2A2B] border border-[#2D2A2B] rounded-[10px] placeholder:text-[#FAFAFD] placeholder:text-xl placeholder:font-medium outline-none text-white placeholder:montserrat"
           placeholder="Message ..."
           type="text"
         />
         <div className="flex items-center gap-2 absolute top-4 right-4">
-          <button className="py-3 px-3.5 cursor-pointer  bg-primary1 rounded-lg text-black">
+          <button  className="py-3 px-3.5 cursor-pointer  bg-primary1 rounded-lg text-black">
             <FaArrowUp></FaArrowUp>
           </button>
         </div>

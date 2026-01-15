@@ -14,8 +14,8 @@ const Setting = () => {
   };
 
   return (
-    <div className="p-6">
-      <h1 className="text-[#FAFAFD] mt-3 ml-[12%] inter text-[32px] font-bold">
+    <div className="md:p-6">
+      <h1 className="text-[#FAFAFD] text-center md:text-start mt-8 md:mt-3 md:ml-[12%] inter text-[32px] font-bold">
         General Settings
       </h1>
       <div className="flex items-center justify-center mt-10">
@@ -31,9 +31,9 @@ const Setting = () => {
       </div>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="w-[800px] mt-25 mx-auto"
+        className="md:w-[800px] mt-25 mx-auto"
       >
-        <div className="grid grid-cols-2 w-full items-center gap-15">
+        <div className="grid md:grid-cols-2 w-full items-center gap-6 md:gap-15">
           <div>
             <h1 className="text-[#FAFAFD] text-sm font-semibold mb-3">Name</h1>
             <input
@@ -67,8 +67,8 @@ const Setting = () => {
             )}
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-15 mt-15">
-          <div className="grid grid-cols-1 gap-15">
+        <div className="grid md:grid-cols-2 mt-5 gap-5 md:gap-15 md:mt-15">
+          <div className="grid grid-cols-1 gap-5 md:gap-15">
             <div>
             <h1 className="text-[#FAFAFD] text-sm font-semibold mb-3">User Name</h1>
               <input

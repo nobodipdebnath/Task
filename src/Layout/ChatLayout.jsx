@@ -3,7 +3,7 @@ import { Link, NavLink, Outlet, useLocation } from "react-router";
 import { FiPlusCircle } from "react-icons/fi";
 import { BiMessageDetail } from "react-icons/bi";
 import user from "../assets/images/user.png";
-import { FaBrain, FaChevronDown, FaChevronUp } from "react-icons/fa6";
+import { FaBars, FaBrain, FaChevronDown, FaChevronUp } from "react-icons/fa6";
 import { IoSettingsOutline } from "react-icons/io5";
 import { FaBookJournalWhills } from "react-icons/fa6";
 import { FaGraduationCap } from "react-icons/fa6";
@@ -29,7 +29,7 @@ const ChatLayout = () => {
 
   return (
     <div className="min-h-screen  feature">
-      <div className="">
+      <div className="hidden md:block">
         {hidePaths.includes(location?.pathname) && (
           <>
             <div className="fixed flex items-center left-10 top-0  h-screen w-[250px] z-50">
@@ -596,9 +596,12 @@ const ChatLayout = () => {
           </>
         )}
       </div>
-      <div className="ml-[250px] min-h-screen">
-        <div className="max-w-[1190px] mx-auto py-10 px-10">
-          <div className="flex justify-end w-full fixed  right-20 text-[#FAFAFD] mb-6">
+      <div className="md:ml-[250px] min-h-screen">
+        <div className="max-w-[1190px] mx-auto py-10 md:px-10 px-4">
+          <div className="flex  items-center justify-between md:justify-end w-full fixed  md:right-20 right-5 top-5 md:backdrop-blur-none backdrop-blur-2xl  text-[#FAFAFD] mb-6">
+            <div className="ml-10 md:hidden">
+              <FaBars className="text-3xl"></FaBars>
+            </div>
             {location?.pathname !== "/chat/journalHistory" && (
               <NavLink
                 to="/chat/setting"
@@ -608,11 +611,12 @@ const ChatLayout = () => {
                   }`
                 }
               >
-                <h2>
+                <h2 className="">
                   <IoSettingsOutline className="text-3xl cursor-pointer" />
                 </h2>
               </NavLink>
             )}
+            
           </div>
 
           <div className="overflow-y-auto">

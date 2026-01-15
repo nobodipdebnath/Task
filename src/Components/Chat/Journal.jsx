@@ -6,7 +6,7 @@ import { Link } from 'react-router';
 const Journal = () => {
     return (
         <div>
-            <div className='chat px-[100px] pb-[120px]'>
+            <div className='chat md:px-[100px] pb-[120px]'>
                 <h1 className='text-white text-center text-[96px] league-gothic'>Journal</h1>
                 <h3 className='text-white text-center text-2xl mt-[100px] '>Choose Journal Category</h3>
                 <div className='mt-5 w-full flex flex-col gap-2.5'>

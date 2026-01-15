@@ -59,7 +59,7 @@ const Features = () => {
                                     <h3 className='text-lg font-bold text-black mb-1'>{card.title}</h3>
                                     <p className='text-center inter text-sm text-[#2D2A2B]'>{card.description}</p>
                                     <div>
-                                        <img className='p-4 absolute -top-7 right-[40%] border bg-[#8E7D3F] border-white rounded-xl' src={card.image} alt="" />
+                                        <img className='p-4 absolute -top-7 left-[42%] right-[45%] border bg-[#8E7D3F] border-white rounded-xl' src={card.image} alt="" />
                                     </div>
                                 </div>
                             )
@@ -74,7 +74,7 @@ const Features = () => {
                                     <h3 className='text-lg font-bold text-center text-black mb-1'>{card.title}</h3>
                                     <p className='text-center inter text-sm text-[#2D2A2B]'>{card.description}</p>
                                     <div>
-                                        <img className='p-4 absolute -top-7 right-[40%] border bg-[#8E7D3F] border-white rounded-xl' src={card.image} alt="" />
+                                        <img className='p-4 absolute -top-7 right-[43%] border bg-[#8E7D3F] border-white rounded-xl' src={card.image} alt="" />
                                     </div>
                                 </div>
                             )

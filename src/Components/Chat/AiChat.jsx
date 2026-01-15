@@ -5,7 +5,7 @@ import logo from '../../assets/images/logo.png'
 
 const AiChat = () => {
   return (
-    <div className="chat px-[100px] pb-[120px]">
+    <div className="chat md:px-[100px] pb-[120px]">
       <h1 className="text-end  text-base mt-14"><span className="py-2 px-4 bg-primary1 text-black rounded-full">Hello</span></h1>
       <div className="flex items-center gap-3 mt-11">
         <img className="h-15 w-14" src={logo} alt="" />
