@@ -66,11 +66,11 @@ const Features = () => {
                         })
                     }
                 </div>
-                <div className='flex mt-15 flex-col md:flex-row justify-center gap-10 lg:gap-6'>
+                <div className='flex mt-15 flex-col md:flex-row mx-[12%] justify-center gap-10 lg:gap-6'>
                     {
                         cards?.slice(3, 5).map(card => {
                             return(
-                                <div className='px-6 pb-6 pt-12 bg-primary1 justify-center items-center rounded-xl relative flex flex-col w-[300px]' key={card.id}>
+                                <div className='px-6 pb-6 pt-12 bg-primary1 justify-center items-center rounded-xl relative flex flex-col md:w-full ' key={card.id}>
                                     <h3 className='text-lg font-bold text-center text-black mb-1'>{card.title}</h3>
                                     <p className='text-center inter text-sm text-[#2D2A2B]'>{card.description}</p>
                                     <div>

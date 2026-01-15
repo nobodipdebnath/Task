@@ -82,7 +82,7 @@ const Footer = () => {
       </div>
       <div className="w-full h-[1px] bg-white my-4"></div>
       <div className="flex items-center justify-between lg:mx-[200px] mx-4 md:mx-0 text-[#FAFAFD] text-base pb-4.5">
-        <p>Copyright 2025 FENYX FEMME</p>
+        <p className="hidden md:block">Copyright 2025 FENYX FEMME</p>
         <p>Inc Terms of Service</p>
         <p>Privacy</p>
         <p>Legal</p>

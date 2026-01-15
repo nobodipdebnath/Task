@@ -16,7 +16,7 @@ const AiChat = () => {
         <img className="h-15 w-14" src={logo} alt="" />
         <p className="text-[#FAFAFD] text-lg">Cubism challenged traditional notions of perspective and representation in art. Instead of imitating nature, it emphasized how we perceive and interpret the world. Its impact is still felt in contemporary art and design.</p>
       </div>
-      <h3 className="text-white text-center text-5xl mt-[200px] league-gothic">
+      <h3 className="text-white text-center text-5xl mt-[20%] league-gothic">
          Let's Get Better!
       </h3>
       <div className="mt-6 relative">
