@@ -95,7 +95,7 @@ const InternalChat = () => {
       </div>
       
 
-      <div onSubmit={handelSubmit} className="mt-12.5 fixed lg:right-[11%] xl:right-[11%] right-4 w-[92%] md:w-auto lg:left-[28%] xl:left-[27.5%] bottom-15">
+      <div onSubmit={handelSubmit} className="mt-12.5 fixed lg:right-[11%] xl:right-[11vw] right-4 w-[92%] md:w-auto lg:left-[28%] xl:left-[27vw] bottom-15">
         <input
           className="w-full py-6 px-7 bg-[#2D2A2B] border border-[#2D2A2B] rounded-[10px] placeholder:text-[#FAFAFD] placeholder:text-xl placeholder:font-medium outline-none text-white placeholder:montserrat"
           placeholder="Message ..."
