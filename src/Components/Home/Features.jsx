@@ -66,7 +66,7 @@ const Features = () => {
                         })
                     }
                 </div>
-                <div className='flex mt-15 flex-col md:flex-row mx-[12%] justify-center gap-10 lg:gap-6'>
+                <div className='flex mt-15 flex-col md:flex-row md:mx-[12%] justify-center gap-10 lg:gap-6'>
                     {
                         cards?.slice(3, 5).map(card => {
                             return(
