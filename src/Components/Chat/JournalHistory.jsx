@@ -77,16 +77,16 @@ const JournalHistory = () => {
 
     return (
         <div>
-            <div className='flex items-center justify-between'>
+            <div className='flex mt-10 md:mt-0 items-center justify-between'>
                 <div onClick={() => navigate(-1)} className='py-2 px-4 bg-[#2D2A2B] cursor-pointer'>
                     <FaArrowLeft className='text-[#FAFAFD] text-xl'></FaArrowLeft>
                 </div>
-                <h1 className='text-[#FAFAFD] league-gothic text-[64px]'>Journal Entries Management</h1>
+                <h1 className='text-[#FAFAFD] league-gothic text-4xl md:text-[64px]'>Journal Entries Management</h1>
                 <div>
                 </div>
             </div>
             <div className='flex items-center justify-between mt-12.5'>
-                <h2 className='text-[#FAFAFD] font-medium text-xl px-4 py-1 bg-[#2D2A2B] rounded-md'>Your Journal Entries</h2>
+                <h2 className='text-[#FAFAFD] font-medium lg:text-xl text-sm px-4 py-3 md:py-1 bg-[#2D2A2B] rounded-md'>Your Journal Entries</h2>
                 <div className="relative inline-block w-[220px]">
                     <button
                         onClick={() => setOpen(!open)}
@@ -119,7 +119,7 @@ const JournalHistory = () => {
                 </div>
             </div>
             <hr className='text-primary1 my-5'/>
-            <div className='py-4 bg-[#2D2A2B] text-[#FAFAFD] text-xl font-medium montserrat flex items-center justify-between rounded-md px-6'>
+            <div className='py-4 bg-[#2D2A2B] text-[#FAFAFD] text-sm md:text-xl font-medium montserrat flex items-center md:justify-between gap-6 md:gap-0 rounded-md px-6'>
                 <div className='flex items-center gap-13'>
                     <h3 >Entry ID</h3>
                     <h4>Description</h4>
@@ -147,7 +147,7 @@ const JournalHistory = () => {
                     })
                 }
             </div>
-            <div className='grid grid-cols-3 mt-13.5 gap-10'>
+            <div className='grid md:grid-cols-3 mt-13.5 gap-10'>
                 <div className='col-span-1'>
                     <h2 className='text-lg text-[#FAFAFD] font-semibold'>Categories</h2>
                     <div className='mt-5 flex flex-col gap-2.5'>
