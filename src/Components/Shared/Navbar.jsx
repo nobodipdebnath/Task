@@ -2,9 +2,13 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router";
 import logo from "../../assets/images/logo.png";
 import { FaBars, FaTimes } from "react-icons/fa";
+import useAuth from "../../Hook/useAuth";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const { user } = useAuth();
+  console.log(user);
 
   const links = (
     <>
@@ -30,11 +34,27 @@ const Navbar = () => {
       <div className="hidden md:block">
         <div className="flex items-center gap-8">
           <ul className="flex items-center gap-8">{links}</ul>
-          <div>
-            <Link to="/login" className="button">
-              Start Subscription
-            </Link>
-          </div>
+
+          {user ? (
+            <div>
+              <Link to="/" className="button">
+                Start Subscription
+              </Link>
+            </div>
+          ) : (
+            <div className="flex items-center gap-5">
+              <div>
+                <Link to="/login" className="button">
+                  Login
+                </Link>
+              </div>
+              <div>
+                <Link to="/login/register" className="button">
+                  Register
+                </Link>
+              </div>
+            </div>
+          )}
         </div>
       </div>
 
